@@ -80,6 +80,9 @@ span {
   .first-level-nav {
     display: none;
   }
+  .show-nav {
+    display: block;
+  }
 
   .register-box {
     width: 60%;
@@ -89,11 +92,6 @@ span {
   .hero-banner {
     padding-top: 3rem;
     height: 100vh;
-  }
-  .nav-container {
-    display: flex;
-    margin: 0;
-    justify-items: flex-start;
   }
   .register-box {
     width: 23rem;
@@ -114,16 +112,28 @@ span {
     margin-top: 2rem;
     font-size: 2rem;
   }
+  nav {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .joystick {
+    width: 5rem;
+    background-color: var(--dk-grey);
+    border: none;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 951px) {
+  .joystick {
+    display: none;
+  }
   nav {
     background-color: var(--dk-grey);
-    display: flex;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-evenly;
     padding: 1rem;
   }
   nav > ul {
