@@ -2,8 +2,177 @@
 
 :root {
   --dk-grey: #263238;
-  --hot-pink: #EC407A;
-  --yellow: #FDD835;
-  --green: #8BC34A;
-  --white: #FAFAFA;
+  --hot-pink: #ec407a;
+  --yellow: #fdd835;
+  --green: #8bc34a;
+  --white: #fafafa;
+}
+body {
+  background-color: var(--dk-grey);
+  font-size: 3rem;
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunito/v26/XRXV3I6Li01BKofIOOaBXso.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+span {
+  color: var(--hot-pink);
+}
+
+.hidden {
+  display: none;
+}
+.hero-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/crowd-background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-box {
+  border-radius: 1rem;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.register-box button {
+  border-radius: 10rem;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #f50707 0%,
+    #c8506e 46%,
+    #fff870 100%
+  );
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.first-nav-items a {
+  display: flex;
+}
+.first-nav-items img {
+  width: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .first-level-nav {
+    display: none;
+  }
+
+  .register-box {
+    width: 60%;
+    margin: auto;
+    overflow: auto;
+  }
+  .hero-banner {
+    padding-top: 3rem;
+    height: 100vh;
+  }
+  .nav-container {
+    display: flex;
+    margin: 0;
+    justify-items: flex-start;
+  }
+  .register-box {
+    width: 23rem;
+    height: 23rem;
+    padding: 25px;
+  }
+  .register-box h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .register-box p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .register-box button {
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  nav {
+    background-color: var(--dk-grey);
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  nav > ul {
+    margin-left: 10%;
+  }
+  .first-level-nav {
+    display: flex;
+    padding: 1rem;
+  }
+  .first-nav-items {
+    position: relative;
+    margin-left: 15rem;
+    margin-right: 5rem;
+  }
+  .nav-items a {
+    margin-right: 5rem;
+    font-size: 2rem;
+  }
+  .nav-items {
+    display: none;
+    position: absolute;
+  }
+  .nav-items li {
+    margin: 2rem;
+  }
+  .nav-items li a {
+    display: block;
+    white-space: nowrap;
+    padding: 0;
+  }
+  .first-nav-items:hover > .nav-items {
+    visibility: visible;
+    display: block;
+    background-color: var(--dk-grey);
+  }
+  .register-box {
+    width: 35rem;
+    height: 35rem;
+    padding: 50px;
+  }
+  .register-box h3 {
+    margin-bottom: 2rem;
+  }
+
+  .register-box p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .register-box button {
+    padding: 1rem 2rem;
+  }
 }
