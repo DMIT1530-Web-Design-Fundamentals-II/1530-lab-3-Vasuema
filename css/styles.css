@@ -83,6 +83,26 @@ span {
   .show-nav {
     display: block;
   }
+  .joystick {
+    width: 5rem;
+    background-color: var(--dk-grey);
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    background-image: url("/img/joystick-logo.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 4.5rem;
+    margin-left: 10rem;
+  }
+  .first-nav-items {
+    font-size: 1.25rem;
+  }
+  .nav-items {
+    font-size: 1rem;
+    margin-left: 4.5rem;
+  }
 
   .register-box {
     width: 60%;
@@ -113,15 +133,15 @@ span {
     font-size: 2rem;
   }
   nav {
+    display: flex;
+    justify-content: space-between;
     width: 55%;
     margin-left: auto;
     margin-right: auto;
   }
-  .joystick {
-    width: 5rem;
-    background-color: var(--dk-grey);
-    border: none;
-    font-size: 1.5rem;
+  .remove-flex{
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 

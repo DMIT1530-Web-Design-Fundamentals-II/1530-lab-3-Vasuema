@@ -8,4 +8,5 @@ const clickButton = document.querySelector('.joystick');
 clickButton.addEventListener('click', () => {
     // when that icon is clicked we are going to grab the nav element (or whatever is showing/hiding) and add or remove that special class we created in the CSS
     document.querySelector('.first-level-nav').classList.toggle('show-nav');
+    document.querySelector('nav').classList.toggle('remove-flex')
 });
